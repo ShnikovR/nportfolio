@@ -1,0 +1,150 @@
+/* ============================================
+   ANIMAÇÕES
+   ============================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes scroll-bounce {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0.4; transform: translateY(8px); }
+}
+
+/* Scroll reveal states */
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-up {
+  transform: translateY(40px);
+}
+
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal-scale {
+  transform: scale(0.92);
+}
+
+.reveal-up.revealed,
+.reveal-left.revealed,
+.reveal-right.revealed,
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger delays for children */
+.skills-grid .skill-card:nth-child(1) { transition-delay: 0.05s; }
+.skills-grid .skill-card:nth-child(2) { transition-delay: 0.1s; }
+.skills-grid .skill-card:nth-child(3) { transition-delay: 0.15s; }
+.skills-grid .skill-card:nth-child(4) { transition-delay: 0.2s; }
+.skills-grid .skill-card:nth-child(5) { transition-delay: 0.25s; }
+.skills-grid .skill-card:nth-child(6) { transition-delay: 0.3s; }
+.skills-grid .skill-card:nth-child(7) { transition-delay: 0.35s; }
+.skills-grid .skill-card:nth-child(8) { transition-delay: 0.4s; }
+.skills-grid .skill-card:nth-child(9) { transition-delay: 0.45s; }
+.skills-grid .skill-card:nth-child(10) { transition-delay: 0.5s; }
+
+.projetos-grid .projeto-card:nth-child(1) { transition-delay: 0.05s; }
+.projetos-grid .projeto-card:nth-child(2) { transition-delay: 0.1s; }
+.projetos-grid .projeto-card:nth-child(3) { transition-delay: 0.15s; }
+.projetos-grid .projeto-card:nth-child(4) { transition-delay: 0.2s; }
+.projetos-grid .projeto-card:nth-child(5) { transition-delay: 0.25s; }
+.projetos-grid .projeto-card:nth-child(6) { transition-delay: 0.3s; }
+
+.timeline-item:nth-child(1) { transition-delay: 0.05s; }
+.timeline-item:nth-child(2) { transition-delay: 0.15s; }
+.timeline-item:nth-child(3) { transition-delay: 0.25s; }
+.timeline-item:nth-child(4) { transition-delay: 0.35s; }
+
+.stats-grid .big-stat:nth-child(1) { transition-delay: 0.05s; }
+.stats-grid .big-stat:nth-child(2) { transition-delay: 0.15s; }
+.stats-grid .big-stat:nth-child(3) { transition-delay: 0.25s; }
+.stats-grid .big-stat:nth-child(4) { transition-delay: 0.35s; }
+
+/* Button glow pulse on hover */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, 0.2) 50%, transparent 60%);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.btn-primary:hover::after {
+  transform: translateX(100%);
+}
