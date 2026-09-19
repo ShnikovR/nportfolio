@@ -36,9 +36,11 @@ window.PORTFOLIO_I18N = {
       "stat4": "Anos"
     },
     "skills": {
-      "tag": "Stack",
-      "title": "Tecnologias que domino",
-      "desc": "Ferramentas e linguagens que uso no dia a dia para construir soluções sólidas."
+      "tag": "Skills",
+      "title": "Tecnologias que fazem parte da minha jornada",
+      "title_before": "Tecnologias que fazem parte da",
+      "title_accent": "minha jornada",
+      "desc": "Ferramentas e tecnologias que utilizo para criar interfaces, sistemas e soluções modernas, responsivas e funcionais."
     },
     "projects": {
       "tag": "Portfólio",
@@ -183,9 +185,11 @@ window.PORTFOLIO_I18N = {
       "stat4": "Years old"
     },
     "skills": {
-      "tag": "Stack",
-      "title": "Technologies I work with",
-      "desc": "Tools and languages I use daily to build solid solutions."
+      "tag": "Skills",
+      "title": "Technologies that are part of my journey",
+      "title_before": "Technologies that are part of",
+      "title_accent": "my journey",
+      "desc": "Tools and technologies I use to build modern, responsive and functional interfaces, systems and solutions."
     },
     "projects": {
       "tag": "Portfolio",
@@ -330,9 +334,11 @@ window.PORTFOLIO_I18N = {
       "stat4": "Años"
     },
     "skills": {
-      "tag": "Stack",
-      "title": "Tecnologías que domino",
-      "desc": "Herramientas y lenguajes que uso a diario para construir soluciones sólidas."
+      "tag": "Skills",
+      "title": "Tecnologías que forman parte de mi trayectoria",
+      "title_before": "Tecnologías que forman parte de",
+      "title_accent": "mi trayectoria",
+      "desc": "Herramientas y tecnologías que utilizo para crear interfaces, sistemas y soluciones modernas, responsivas y funcionales."
     },
     "projects": {
       "tag": "Portafolio",
